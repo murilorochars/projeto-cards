@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyServer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            background-color: rgb(19, 18, 18);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* HEADER */
+        .NavBar {
+            width: 100%;
+            background-color: rgb(15, 14, 14);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            padding: 0;
+            align-items: center;
+        }
+
+        .nav li {
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .back {
+            background-color: yellow;
+            padding: 10px 15px;
+            color: black;
+            border-radius: 40px;
+        }
+
+        /* TITULO */
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+
+        .sub {
+            font-size: 42px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        /* CONTAINERS */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            width: 100%;
+            max-width: 1200px;
+            padding: 10px;
+        }
+
+        .Container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            background-color: rgb(53, 48, 48);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .Container h3 {
+            font-size: 22px;
+            border-bottom: 2px solid yellow;
+            padding-bottom: 5px;
+        }
+
+        .Container p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .stuf {
+            list-style: none;
+            padding: 0;
+        }
+
+        .stuf li {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .but {
+            background-color: yellow;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100%;
+            max-width: 250px;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 768px) {
+            .NavBar {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .nav {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .sub {
+                font-size: 34px;
+            }
+
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .Container {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .sub {
+                font-size: 28px;
+            }
+
+            .Container {
+                padding: 20px;
+            }
+
+            .Container h3 {
+                font-size: 20px;
+            }
+
+            .Container p {
+                font-size: 18px;
+            }
+
+            .but {
+                font-size: 16px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="NavBar">
+        <h1 class="titulo">MYSERVER</h1>
+        <ul class="nav">
+            <li>Home</li>
+            <nav class="back"><li>Planos</li></nav>
+            <li>Suporte</li>
+            <li>Contato</li>
+        </ul>
+    </header>
+
+    <h1 class="sub">ESCOLHA SEU</h1>
+
+    <main>
+        <div class="Container">
+            <h3>Essencial</h3>
+            <p>R$ 3.95/mês</p>
+            <ul class="stuf">
+                <li>1 Website</li>
+                <li>1 GB de Armazenamento</li>
+                <li>10GB de transferência</li>
+            </ul>
+            <p class="but">Assine Já</p>
+        </div>
+
+        <div class="Container">
+            <h3>Premium</h3>
+            <p>R$ 7.95/mês</p>
+            <ul class="stuf">
+                <li>5 Websites</li>
+                <li>3GB de Armazenamento</li>
+                <li>Transferência Ilimitada</li>
+            </ul>
+            <p class="but">Assine Já</p>
+        </div>
+
+        <div class="Container">
+            <h3>Gold</h3>
+            <p>R$ 13.95/mês</p>
+            <ul class="stuf">
+                <li>10 Websites</li>
+                <li>30GB de Armazenamento</li>
+                <li>Transferência Ilimitada</li>
+            </ul>
+            <p class="but">Assine Já</p>
+        </div>
+    </main>
+
+</body>
+</html>
